@@ -47,8 +47,8 @@ const Navbar = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
-              <Link href="tel:844-COPLYCOPS" className="hover:underline">
-                Call us today! 844-COPLYCOPS
+              <Link href="tel:844-COPLEYCOPS" className="hover:underline">
+                Call us today! 844-COPLEYCOPS
               </Link>
             </div>
             <div className="hidden md:flex items-center gap-2">
@@ -80,7 +80,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4">
           <div className="flex h-16 items-center justify-between">
             <Link href="/" className="flex items-center gap-2 text-xl font-bold">
-              <span className="text-primary">COPLY</span>
+              <span className="text-primary">COPLEY</span>
               <span>COPS</span>
               <ShieldCheck className="h-6 w-6 text-primary" />
             </Link>
