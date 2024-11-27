@@ -147,17 +147,17 @@ export default function AboutUs() {
                 {
                   name: "Alex Johnson",
                   role: "Chief Security Officer",
-                  image: "/placeholder.svg?height=300&width=300",
+                  image: "/alex-johnson.jpg",
                 },
                 {
                   name: "Samantha Lee",
                   role: "Threat Intelligence Analyst",
-                  image: "/placeholder.svg?height=300&width=300",
+                  image: "/samantha-lee.jpg",
                 },
                 {
                   name: "Michael Chen",
                   role: "Penetration Testing Expert",
-                  image: "/placeholder.svg?height=300&width=300",
+                  image: "/michael-chen.jpg",
                 },
               ].map((member, index) => (
                 <motion.div

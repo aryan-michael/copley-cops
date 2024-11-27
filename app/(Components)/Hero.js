@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -7,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import CarouselImagesData from "@/lib/CarouseImagesData";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 
@@ -25,11 +27,11 @@ const Hero = () => {
         ]}
       >
         <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
-            <CarouselItem key={index}>
+          {CarouselImagesData.map((item) => (
+            <CarouselItem key={item?.id}>
               <Card>
                 <CardContent className="flex aspect-video items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1}</span>
+                  <Image src={item?.href} alt={item?.alt} width="1000" height="1000" className="w-full h-full rounded-lg aspect-video"/>
                 </CardContent>
               </Card>
             </CarouselItem>
@@ -43,7 +45,6 @@ const Hero = () => {
         </div>
       </Carousel>
       <div className="py-2 text-center text-sm text-muted-foreground">
-        {/* Slide {current} of {count} */}
       </div>
     </div>
   );
